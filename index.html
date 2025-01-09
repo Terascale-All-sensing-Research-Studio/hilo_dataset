@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HILO Dataset</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h2 class="header-content" id="title">HILO: A Large-Scale Heterogeneous Object Dataset for Benchmarking Robotic Grasping Approaches<br></h2>
+    <h3 class="header-content" id="conference"><i>Accepted and Presented at ICARA 2025</i></h3>
+    <p class="header-content" id="authors">
+        Xinchao Song, Sean Banerjee, Natasha Kholgade Banerjee
+    </p>
+    <p class="header-content" id="authors">
+        Terascale All sensing Research Studio
+    </p>
+    <p class="header-content" id="links">
+        <a href="" target="_blank" class="link button"><img
+                src="assets/paper_icon.png" alt="Paper" class="icon">Paper Available Soon</a>
+        <a href="https://drive.google.com/drive/folders/1Gnd3MlHR92MhQKKyjm5rWmx7Cw5lVjqM?usp=sharing" target="_blank" class="link button"><img
+                src="assets/drive_icon.png" alt="Google drive icon" class="icon">Dataset</a>
+        <a href="https://github.com/Terascale-All-sensing-Research-Studio/hilo_dataset" target="_blank" class="link button"><img
+                src="assets/github_mark.png" alt="GitHub icon" class="icon">Code</a>
+    </p>
+</div>
+
+<div class="body">
+    <div class="abstract content">
+        <hr>
+        <br>
+        <h3 class="body-title">Abstract</h3>
+        <p id="abstract-body">
+            Robust object manipulation is essential for robotics applications in real-world environments, especially when handling diverse and complex everyday objects. To facilitate this research, we present <b>HILO</b>, a large-scale dataset of 253 everyday objects and 288 diverse scenes. HILO bridges a crucial gap in existing manipulation datasets through its heterogeneity and dual-resolution approach, combining <b>HI</b>gh-resolution individual object scans with <b>LO</b>w-resolution scans of cluttered scenes. This provides both the precise geometric data needed for grasp planning and realistic environmental context. The dataset's comprehensive representations enable rigorous benchmarking of robotic grasping algorithms. Our evaluation of three leading grasping algorithms—Contact-GraspNet, GraspNet Baseline, and DexNet 4.0—reveals critical trade-offs between grasp quantity and quality, demonstrating the dataset's value in advancing robotic grasping research. HILO's rich object diversity and dual-resolution methodology provide a foundation for developing more versatile robotic systems capable of reliable real-world robotic manipulation.
+        </p>
+    </div>
+
+    <br>
+
+    <h3 class="body-title"><b>HI</b>gh-Resolution Models</h3>
+
+    <figure>
+        <img src="assets/fig_hilo_objects.jpg"
+             class="img-fluid"
+             alt="Example high-resolution models from the HILO dataset."
+             id="fig_hilo_objects"
+             width="640">
+        <figcaption>
+            The HILO dataset comprises the high-resolution (HI) individual scanned models for 253 diverse everyday objects across seven categories: toys, food and drink items, cooking utensils, tools, mugs and containers, general household items, and office supplies. All these items are easily obtainable through retail or online vendors. 
+        </figcaption>
+    </figure>
+
+    <br>
+
+    <div style="overflow-x:auto;">
+        <table style="margin-left: auto;  margin-right: auto; border-collapse: collapse">
+            <caption style="margin-top: 15px; caption-side: top; line-height: 150%; text-align: center;
+            color: black">
+                The number of objects, average mass, vertex count, face count, volume, and surface area per category of the HILO dataset
+            </caption>
+            <tr class="border-vertical1">
+                <th></th>
+                <th class="border-left">#Objects</th>
+                <th>Mass (<i>g</i>)</th>
+                <th>Vertices</th>
+                <th>Faces</th>
+                <th>Volume (<i>cm<sup>3</sup></i>)</th>
+                <th>Surface Area (<i>cm<sup>2</sup></i>)</th>
+            </tr>
+            <tr class="border-bottom">
+                <td>Toys</td>
+                <td class="border-left">33</td>
+                <td>134</td>
+                <td>1,146,901</td>
+                <td>2,294,540</td>
+                <td>416</td>
+                <td>439</td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Food/Drink</td>
+                <td class="border-left">33</td>
+                <td>296</td>
+                <td>1,190,135</td>
+                <td>2,380,509</td>
+                <td>455</td>
+                <td>375</td>
+            </tr>
+            <tr>
+                <td>Cooking</td>
+                <td class="border-left">38</td>
+                <td>301</td>
+                <td>937,467</td>
+                <td>1,897,075</td>
+                <td>327</td>
+                <td>756</td>
+            </tr>
+            <tr>
+                <td>Tools</td>
+                <td class="border-left">40</td>
+                <td>164</td>
+                <td>749,976</td>
+                <td>1,500,821</td>
+                <td>125</td>
+                <td>285</td>
+            </tr>
+            <tr>
+                <td>Mugs/Containers</td>
+                <td class="border-left">35</td>
+                <td>329</td>
+                <td>1,210,220</td>
+                <td>2,420,620</td>
+                <td>923</td>
+                <td>685</td>
+            </tr>
+            <tr>
+                <td>Household</td>
+                <td class="border-left">39</td>
+                <td>359</td>
+                <td>1,044,337</td>
+                <td>2,089,883</td>
+                <td>775</td>
+                <td>638</td>
+            </tr>
+            <tr>
+                <td>Office</td>
+                <td class="border-left">35</td>
+                <td>193</td>
+                <td>1,074,618</td>
+                <td>2,154,697</td>
+                <td>377</td>
+                <td>698</td>
+            </tr>
+            <tr class="border-vertical2">
+                <td>Total</td>
+                <td class="border-left">253</td>
+                <td>254</td>
+                <td>1,041,806</td>
+                <td>2,088,164</td>
+                <td>485</td>
+                <td>556</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="body-title"><b>LO</b>w-Resolution Scenes</h3>
+
+    <div class="plain-text">
+    The HILO dataset contains 288 low-resolution cluttered scenes from 72 groups of 10 objects randomly selected from the 253 objects. Each scene contains:
+
+    <ul>
+        <li>120 or 104 raw RGBD images from different viewpoints</li>
+        <li>120 or 104 corresponding undistorted RGBD images</li>
+        <li>Masks for the undistorted RGBD images</li>
+        <li>Object annotations</li>
+    </ul>
+
+    <br>
+
+    </div>
+
+    <figure>
+        <img src="assets/hilo_example_scenes.jpg"
+             class="img-fluid"
+             alt="Example low-resolution scenes from the HILO dataset."
+             id="hilo_example_scenes"
+             width="640">
+        <figcaption>The HILO dataset contains 32,256 RGBD image from diverse viewpoints.
+        </figcaption>
+    </figure>
+
+    <br>
+    <br>
+
+    <figure>
+        <img src="assets/hilo_scene_pcd.gif"
+             class="img-fluid"
+             alt="A GIT animation of an example point cloud generated by the masked undistorted RGBD image of a low-resolution scene and aligned with each high-resolution mesh."
+             id="hilo_scene_pcd"
+             width="640">
+        <figcaption>An example point cloud generated by the masked undistorted RGBD image of a low-resolution scene and aligned with high-resolution meshes using the corresponding object transformation annotations.
+        </figcaption>
+    </figure>
+
+    <br>
+</div>
+
+</body>
+</html>
