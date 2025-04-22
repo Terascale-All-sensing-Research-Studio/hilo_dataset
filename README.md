@@ -1,4 +1,4 @@
-# HILO: A Large-Scale Heterogeneous Object Dataset for Benchmarking Robotic Grasping Approaches.
+# Dataset of RGB-D Images of Object Collections from Multiple Viewpoints with Aligned High-Resolution 3D Models of Objects 
 
 ## Contents
 
