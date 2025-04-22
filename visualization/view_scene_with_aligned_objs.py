@@ -51,7 +51,7 @@ if __name__ == '__main__':
     scene_cloud = generate_o3d_point_cloud(color_img.reshape(h_d * w_d, 3), cloud_points)
     scene_cloud = scene_cloud.transform(current_cam_wrt_arc0_7)
 
-    annotation_path = os.path.join(scene_path, 'object_trans_wrt_arc0_image7.json')
+    annotation_path = os.path.join(scene_path, 'object_pose_wrt_arc0_image7.json')
     with open(annotation_path, 'r') as fj:
         annotations = json.load(fj)
 

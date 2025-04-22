@@ -262,7 +262,7 @@ if __name__ == '__main__':
     scene_path = os.path.join(scenes_root, args.scene_name)
     print('scene_name', args.scene_name)
 
-    output_file = os.path.join(scene_path, 'object_trans_wrt_arc0_image7.json')
+    output_file = os.path.join(scene_path, 'object_pose_wrt_arc0_image7.json')
 
     # Check if the output file already exists
     if os.path.exists(output_file):
