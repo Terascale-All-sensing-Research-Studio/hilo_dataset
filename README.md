@@ -1,4 +1,4 @@
-# Dataset of RGB-D Images of Object Collections from Multiple Viewpoints with Aligned High-Resolution 3D Models of Objects 
+# Dataset of RGB-D Images of Object Collections from Multiple Viewpoints with Aligned High-Resolution 3D Models of Objects (HILO)
 
 ## Contents
 
