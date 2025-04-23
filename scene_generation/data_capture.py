@@ -35,7 +35,7 @@ def load_image(path):
 
 
 def kinect_capture(device, image_id, color_save_path, depth_save_path):
-    kcolor, kdepth = kinect_capture_helper(
+    kcolor, kdepth = kinectCapture(
         device=device,
         image_id=image_id
     )
@@ -51,7 +51,7 @@ def kinect_capture(device, image_id, color_save_path, depth_save_path):
         print("kdepth is None")
 
 
-def kinect_capture_helper(device, save_path=None, image_id=None, image_name=None, convert_bgr_rgb=True):
+def kinectCapture(device, save_path=None, image_id=None, image_name=None, convert_bgr_rgb=True):
     num_max_trials = 10
     for idx in range(num_max_trials):
         # other options in "pykinect_azure\k4a\capture.py"
