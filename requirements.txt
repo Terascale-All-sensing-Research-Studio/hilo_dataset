@@ -1,0 +1,10 @@
+numpy
+scipy
+opencv-python
+trimesh
+pymeshlab
+open3d
+Pillow
+pyserial
+pykinect_azure
+tqdm
