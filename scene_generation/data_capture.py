@@ -7,16 +7,10 @@ import multiprocessing
 import cv2
 import numpy as np
 from PIL import Image
-
-import kinova
-
-sys.path.insert(1, 'C:\\Users\\TARS\\Desktop\\dev\\k4a_python\\pyKinectAzure')
 import pykinect_azure as pykinect
 
-sys.path.insert(1, '..\\')
+import kinova
 import handler_scene_data
-
-sys.path.insert(1, '..\\turntable_control')
 from turntable_control import Turntable
 
 # Maximum allowed waiting time during actions (in seconds)
