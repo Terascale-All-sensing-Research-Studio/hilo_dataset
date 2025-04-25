@@ -6,7 +6,7 @@ import json
 class DataHandler():
     def __init__(
             self,
-            root="..\\",
+            root="../",
             data_path=str(Path(__file__).resolve().parent / "hi-lo-scene-data.json")  # make relative to repo
     ):
         self._root = os.path.abspath(root)
