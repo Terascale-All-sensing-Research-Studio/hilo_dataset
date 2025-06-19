@@ -14,6 +14,8 @@
 
 [Troubleshooting](#troubleshooting)
 
+[Citation](#citation)
+
 ## Description
 
 We present the HILO dataset consisting of high-resolution 3D scanned models for 253 common-use objects and 32,256
@@ -92,3 +94,16 @@ pip install -r requirements.txt
 
 We are using `pykinect_azure` to access the Azure Kinect camera. For troubleshooting, please refer to its GitHub
 repository: https://github.com/ibaiGorordo/pyKinectAzure.
+
+## Citation
+Please cite our paper in your publications if it helps your research:
+```
+@inproceedings{song2025hilo,
+  title={HILO: A Large-Scale Heterogeneous Object Dataset for Benchmarking Robotic Grasping Approaches},
+  author={Song, Xinchao and Banerjee, Sean and Banerjee, Natasha Kholgade},
+  booktitle={2025 11th International Conference on Automation, Robotics, and Applications (ICARA)},
+  pages={178--182},
+  year={2025},
+  organization={IEEE}
+}
+```
